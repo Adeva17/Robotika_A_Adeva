@@ -1,0 +1,13 @@
+Microcontroller esp32 is used with imclab or itclab, coded using arduino IDE. Arduino IDE is also used to code surveillance robot.
+
+Then we have python jupyter notebook. it was used to code the AI, that communicate with the surveillance robot+microcontroller esp32 using something called serial communication.
+
+the mictrocontroller esp32 there is also something called control strategies.
+
+Local
+========================================
+Cloud
+
+all of that can be connected with an IoT, yang paling utama adalah mobile apps, dimana bisa didownload sebuah aplikasi bernama IoT MQTT panel, dimana mobile apps tersebut bisa terkoneksi dengan sebuah cloud IoT/ Salah satunyua yang digunakan pak basuki adalah, i-ot.net atau yang opensource adalah hivemq.com
+
+
