@@ -32,4 +32,27 @@ Minggu ketujuh adalah tahap penerapan nyata IoT. Kami mengirimkan instruksi ke r
 
 ---
 
-📁 Repositori ini akan terus diperbarui seiring berkembangnya pembelajaran dan eksperimen di kelas robotik.
+## 🎯 Final Project: Lock-Target Robot Using YOLO and ESP32
+
+Proyek akhir ini merupakan implementasi sistem pelacakan objek secara otomatis berbasis visi komputer dan mikrokontroler. Sistem ini dirancang untuk mengenali objek tertentu dalam video secara real-time, mengunci satu target, dan mengendalikan arah gerak robot menuju target tersebut.
+
+### 🔧 Komponen Utama:
+- **Model Deteksi Objek:** Menggunakan YOLOv8 untuk mengenali objek melalui kamera secara langsung.
+- **Tracking System:** DeepSort digunakan untuk melacak posisi objek yang telah dikenali dan menjaga fokus pada satu target (locked target).
+- **ESP32 & Motor Driver:** ESP32 menerima perintah arah (maju, kiri, kanan) dari komputer berdasarkan posisi target, lalu mengendalikan dua motor melalui pin PWM.
+
+### 🧪 Mekanisme Kerja:
+1. Kamera menangkap video dan diproses oleh model YOLO.
+2. Objek yang terdeteksi dilacak menggunakan DeepSort dan dipilih satu target untuk dikunci.
+3. Posisi target dianalisis untuk menentukan apakah robot perlu belok kiri, kanan, atau maju.
+4. Perintah dikirim melalui serial ke ESP32 yang menggerakkan motor sesuai instruksi tersebut.
+
+### 🔗 Integrasi:
+Proyek ini menggabungkan:
+- Python (untuk deteksi dan pelacakan)
+- Arduino C++ (untuk kontrol motor via ESP32)
+- OpenCV + YOLOv8 + DeepSort
+- Komunikasi serial antara PC dan ESP32
+
+🎥 File video output dan log koordinat target juga disertakan sebagai bukti keberhasilan pelacakan.
+👉 [Tonton di YouTube](https://drive.google.com/file/d/1SGGPJMIF_751zInjermGRN3qG_wzIuwl/view?usp=sharing)
